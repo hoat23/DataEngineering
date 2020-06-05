@@ -28,7 +28,7 @@ docker images ps
 Docker run "centos". Running a "centos" image.  
 
 ```
-docker run centos bash
+docker run -it centos
 ```
 
 Starting a "centos" container.
