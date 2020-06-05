@@ -34,9 +34,13 @@ docker run centos bash
 Starting a "centos" container.
 
 ```
-Docker start "centos".
+docker start "centos".
 ```
 
+Listing all containers.
+```
+docker ps -a
+```
 ## Hadoop Configuration in Docker
 
 ## Spark Configuration in Docker
