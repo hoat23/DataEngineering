@@ -15,7 +15,7 @@ Steps to create a container Docker.
 
 - Finally, after you have launched a container from an existing image, you start its service and run the application.
 
-<img src="https://github.com/hoat23/DataEngineering/blob/master/img/img01.png" width="400"/>
+<img src="https://github.com/hoat23/DataEngineering/blob/master/img/img01.png" width="400" align="center"/>
 
 Listing all images
 ```
