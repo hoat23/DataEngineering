@@ -2,6 +2,20 @@
 
 This repository is for a quick installation and configuration of software using Docker.
 
+## Docker commands
+
+Listing all images
+```
+docker images ps
+```
+
+Docker run centos
+
+```
+docker run centos bash
+```
+
+
 ## Hadoop Configuration in Docker
 
 ## Spark Configuration in Docker
