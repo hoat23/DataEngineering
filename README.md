@@ -6,8 +6,9 @@ This repository is for a quick installation and configuration of software using 
 
 Steps to create a container Docker.
 
-![creating-docker-container](https://github.com/hoat23/DataEngineering/blob/master/img/crating-a-docker-container.png?style=centerme)
-
+<div align="center">
+<img src="https://github.com/hoat23/DataEngineering/blob/master/img/crating-a-docker-container.png" width="800" align="center"/>
+</div>
 
 - Create an image from a Dockerfile using docker build.
 
