@@ -9,12 +9,17 @@ Listing all images
 docker images ps
 ```
 
-Docker run centos
+Docker run "centos". Running a "centos" image.  
 
 ```
 docker run centos bash
 ```
 
+Starting a "centos" container.
+
+```
+Docker start "centos".
+```
 
 ## Hadoop Configuration in Docker
 
