@@ -6,7 +6,7 @@ This repository is for a quick installation and configuration of software using 
 
 Steps to create a container Docker.
 
-![container](https://github.com/hoat23/DataEngineering/blob/master/img/crating-a-docker-container.png)
+![container](https://github.com/hoat23/DataEngineering/blob/master/img/crating-a-docker-container.png?style=centerme)
 
 Listing all images
 ```
