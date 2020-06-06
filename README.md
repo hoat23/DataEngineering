@@ -31,10 +31,16 @@ Docker run "centos". Running a "centos" image.
 docker run -it centos
 ```
 
+Docker build a image from a files configuration.
+
+```
+docker build -t docker-hadoop docker-hadoop
+```
+
 Docker remove image (f:force)
 
 ```
-docker image rm -f hadoop-docker
+docker image rmi -f hadoop-docker
 ```
 
 Starting a "centos" container.
