@@ -62,3 +62,7 @@ docker ps -a
 ## Logstash configuration in Docker
 
 ## Kibana configuration in Docker
+
+## Architectures in AWS
+
+- https://d1.awsstatic.com/events/reinvent/2019/Building_on_AWS_The_architecture_of_the_Siemens_MindSphere_platform_MFG202.pdf
