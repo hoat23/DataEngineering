@@ -37,6 +37,12 @@ Docker build a image from a files configuration.
 docker build -t docker-hadoop docker-hadoop
 ```
 
+Docker remove all stopped containers, dangling images, and unused network. Use the -f or --force option to bypass the prompt. By default, the command doesn’t remove unused volumes to prevent losing important data. To remove all unused volumes, pass the --volumes option
+
+```
+docker system prune
+```
+
 Docker remove image (f:force)
 
 ```
