@@ -38,5 +38,10 @@ Space:           dev
 
 #### Show app's list
 ```bash
+user@cloudshell:~$ ibmcloud cf apps
+```
+We can use a equivalent command:
+
+```bash
 user@cloudshell:~$ ibmcloud app list
 ```
