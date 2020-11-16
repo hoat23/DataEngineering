@@ -45,3 +45,6 @@ We can use a equivalent command:
 ```bash
 user@cloudshell:~$ ibmcloud app list
 ```
+
+## References
+- http://cli.cloudfoundry.org/en-US/v6/
