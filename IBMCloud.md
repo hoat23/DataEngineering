@@ -17,8 +17,9 @@ curl -sL https://raw.githubusercontent.com/IBM-Cloud/ibm-cloud-developer-tools/m
 ```
 cd your_new_directory
 ```
+## Usefull commands
 
-### Target to Cloud Foundry
+#### Target to Cloud Foundry
 ```bash
 user@cloudshell:~$ ibmcloud target --cf
 Targeted Cloud Foundry (http://api.us-south.cf.cloud.ibm.com)
@@ -33,4 +34,9 @@ Resource group:  No resource group targeted, use 'ibma target -g RESOURCE_GROUP'
 CF API endpoint: https://api.us-south.cf.cloud.ibm.com (API version: 2.153.0)
 Org:             user@gmail.com
 Space:           dev
+```
+
+#### Show app's list
+```bash
+user@cloudshell:~$ ibmcloud app list
 ```
