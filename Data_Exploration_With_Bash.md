@@ -7,20 +7,21 @@ EXPRESIONES REGULARES FECHAS
 **********************************************************
 
 El comando awk se usa para separar columnas. Usas 
-
+´´´
 		awk '{print $1}' FS="|" archivo.txt 
-
+´´´
 Para imprimir la primera columna dentro de un archivo separado por pipes. 
 Si además quieres ver el número de fila en el que está o la longitud escribes NR y length adentro del print.
 Quedaría 
+´´´
 		awk '{print NR, $1, length}' FS="|" archivo.Txt
-
+´´´
 Eso además le puedes aplicar un grep para que del resultado que te dio te lance las filas que sigan cierto patrón. Con ver si tienen letras. Esos es grep [Aa-Zz]
 Si quieres buscar todos los que NO cumplen con el patrón pones un -v
 Entonces todo junto es 
-
+´´´
 		awk '{print NR, $3}' FS="|" archivo.txt | grep -P [aA-zZ]
-
+´´´
 Esto te muestra todas las filas de la Columna 3 que tienen letras.
 
 ************************Comandos*****************************************
