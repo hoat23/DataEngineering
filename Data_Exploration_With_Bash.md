@@ -1,6 +1,6 @@
 ### EXPRESIONES REGULARES 
 
-#### FECHAS
+#### Fechas
 
 ([0-2]\d|3[0,1])\/(0\d|1[0,1,2])\/(20[0-2]\d)  ------> 09/03/2019
 
@@ -9,7 +9,7 @@
 ^(20[0-2]\d)\-(0\d|1[0,1,2])\-([0-2]\d|3[0,1]) \d{2}\:\d{2}\:\d{2}\.\d{6}   -----> 2019-12-24 23:45:34.675434
 
 **********************************************************
-### Commando AWK
+### COMANDO AWK
 El comando awk se usa para separar columnas. Usas 
 ```
 awk '{print $1}' FS="|" archivo.txt 
