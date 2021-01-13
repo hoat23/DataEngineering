@@ -10,6 +10,10 @@
 
 **********************************************************
 ### COMANDO AWK
+Imprimir las primeras 10 lineas de un archivo
+```
+awk 'NR < 11' archivo.csv
+```
 El comando awk se usa para separar columnas. Usas 
 ```
 awk '{print $1}' FS="|" archivo.txt 
