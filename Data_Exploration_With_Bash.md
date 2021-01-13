@@ -68,6 +68,7 @@ awk '{print $5}' FS='|' archivo.csv | awk '{print NR, length}'| grep '0' -w -v
 ```
 #### Cuando viene el problema de muchos formatos de fechas y campos nulos
 
-1-Buscar por Git Bash que campos son nulos: ```awk '{print NR, $5}' FS="," seguros.csv | grep [aA-zZ] -v```
-2.Quitarlos manualmente.
-3.Ir al excel añadir una fila al inion y pasarle un fitro para ver que columnas son de diferentes formato
+1. Buscar por Git Bash que campos son nulos: ```awk '{print NR, $5}' FS="," seguros.csv | grep [aA-zZ] -v```
+2. Quitarlos manualmente.
+3. Ir al excel añadir una fila al inion y pasarle un fitro para ver que columnas son de diferentes formato
+
