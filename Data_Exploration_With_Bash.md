@@ -58,6 +58,10 @@ awk '{print $7}' FS="," archivo.csv | grep -P '[A-Za-z]' -v
 ```
 awk '{print $8}' FS="," archivo.csv | grep -P '[0-9]{0,3}' -v
 ```
+#### Para fechas de la  dMMyyyy 
+```
+awk '{print $2}' FS=";" *.csv | grep -P '(\d|[1-2]\d|3[0,1])(0\d|1[0,1,2])(20[0-2]\d)' -v
+```
 #### Para campos que tengan alfanumericos
 ```
  awk '{print $10}' FS="," archivo.csv | grep -P '[A-Za-z0-9]' -v
