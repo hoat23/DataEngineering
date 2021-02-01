@@ -30,5 +30,4 @@ data_decoded = cipher.decrypt( data_encoded )
 
 ### Documentation about Fernet
 - https://github.com/fernet/spec/blob/master/Spec.md#token-format
-- 
 
