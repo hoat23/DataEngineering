@@ -55,6 +55,23 @@ def sum(numbers):
 
 ```python
 from proj.tasks import add
+
+# Asyncronous
+rpt = add.delay(3,4) 
+print(rpt.id) # print task id
+print( rpt.get(timeout=1) )
+
+# Syncronous
+rpt = add(3,4)
+print(rpt)
+
+# Get status
+# happy track   : "PENDING -> STARTED -> SUCCESS"
+# not so happy  : "PENDING -> STARTED -> RETRY -> STARTED -> RETRY -> STARTED -> SUCCESS"
+while a.state!='SUCCESS':
+   # code here!
+   ...
+
 ```
 
 ##### Execute Celery Server
