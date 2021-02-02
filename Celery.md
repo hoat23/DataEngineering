@@ -72,6 +72,19 @@ while a.state!='SUCCESS':
    # code here!
    ...
 
+# Runing by steps
+## Normal
+s1 = add.s(2, 2)
+res = s1.delay()
+res.get()
+
+## Special
+# incomplete partial: add(?, 2)
+s2 = add.s(2)
+# resolves the partial: add(8, 2)
+res = s2.delay(8)
+res.get()
+
 ```
 
 ##### Execute Celery Server
