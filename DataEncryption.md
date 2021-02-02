@@ -51,6 +51,91 @@ print(sha256.hexdigest())
 #26cfef880b08fa59578d80b0e0f6450c0ee0b1dcb6535767a2fb810cd1d6a33d
 ```
 
+# RSA Encryption
+
+```python
+# coding: utf-8
+# pip install cryptography
+# no pip install winrandom
+# no pip install RSA
+# https://cryptography.io/en/latest/hazmat/primitives/asymmetric/rsa/
+# http://www.pythondiario.com/2018/09/cryptography-cifrado-simetrico.html
+# Empezaremos generando la clave privada
+from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives.asymmetric import rsa
+
+class cypherRSA(object):
+    def __init__(self):
+        self.private_key=[]
+        self.public_key=[]
+
+    def genKeys(self):
+        self.private_key = rsa.generate_private_key(
+            public_exponent=65537,
+            key_size=2048,
+            backend=default_backend()
+        )
+        self.public_key = self.private_key.public_key()
+        print("Public Key: " + str(self.public_key))
+        print("Private Key: "+ str(self.private_key))
+
+    def getPublicKey(self):
+        return self.public_key
+
+    def getPrivateKey(self):
+        
+        return self.public_key
+
+    def encrypt(self,nameFile):
+        print("Encriptar datos")
+
+    def decrypt(self,nameFile):
+        print("Desencriptar datos")
+
+
+obj = cypherRSA()
+obj.genKeys()
+```
+
+## Cesar Encryption
+
+```python
+# coding:utf-8
+"""
+@Autor Deiner Zapata Silva
+@Link  https://programacionpython80889555.wordpress.com/2018/06/28/cifrado-cesar-en-python-ejercicio-basico/
+"""
+
+# Peticion de texto a cifrar
+print("\n-----------------------------------------------------------------------------------------------------------")
+txt_clr = input("Ingrese texto a cifrar:\n")
+print("-----------------------------------------------------------------------------------------------------------")
+# Creamos cadena de caracteres
+if txt_clr == txt_clr.upper():
+    abc = "ABCDEFGHIKLMNÑOPQRSTUVWXYZ"
+else:
+    abc = "abcdefghijklmnñopqrstuvwxyz"
+
+# Definimos valor del desplazamiento
+k = int(input("Valor de desplazamiento:"))
+
+# Cadena cifrada
+txt_enc = ""
+
+# Realizamos cifrado
+for c in txt_clr:
+    if c in abc:
+        txt_enc += abc[(abc.index(c)+k) % (len(abc))]
+    else:
+        txt_enc += c
+
+# Visualizamos texto cifrado
+print("-----------------------------------------------------------------------------------------------------------")
+print("Texto cifrado:\n", txt_enc)
+print("-----------------------------------------------------------------------------------------------------------")
+
+```
+
 ### Documentation about Fernet
 - https://github.com/fernet/spec/blob/master/Spec.md#token-format
 
