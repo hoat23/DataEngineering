@@ -8,8 +8,10 @@
 proj/__init__.py
     /celery.py
     /tasks.py
+first_app.py
 ```
-
+Documentation
+- https://medium.com/analytics-vidhya/asynchronous-tasks-in-python-with-celery-e6a9d7e3b33d
 #### proj/celery.py
 ```python
 from celery import Celery
