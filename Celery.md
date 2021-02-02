@@ -62,16 +62,16 @@ from proj.tasks import add
 celery -A proj worker -l INFO
 ```
 Options:
-  -A, --app APPLICATION
-  -b, --broker TEXT
-  --result-backend TEXT
-  --loader TEXT
-  --config TEXT
-  --workdir PATH
-  -C, --no-color
-  -q, --quiet
-  --version
-  --help
+-  -A, --app APPLICATION
+-  -b, --broker TEXT
+-  --result-backend TEXT
+-  --loader TEXT
+-  --config TEXT
+-  --workdir PATH
+-  -C, --no-color
+-  -q, --quiet
+-  --version
+-  --help
 
 ## Documentation
 - https://docs.celeryproject.org/en/stable/getting-started/next-steps.html#project-layout
