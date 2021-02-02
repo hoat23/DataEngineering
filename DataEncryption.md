@@ -30,7 +30,7 @@ data_decoded = cipher.decrypt( data_encoded )
 
 # Hashing Information
 
-```
+```python
 import hashlib
 
 ID = "joss229"
