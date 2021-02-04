@@ -88,11 +88,33 @@ res = s2.delay(8)
 res.get()
 
 ```
+## Commands Line
 
 ##### Execute Celery Server
 ```
 celery -A proj worker -l INFO
 ```
+
+##### Monitoring tasks and workers
+Enable monitoring
+```
+celery -A proj control1 enable_event
+```
+See the workers are doing
+```
+# events
+celery -A proj events
+# dumps
+celery -A proj events --dump
+```
+Disable monitoring
+```
+celery -A proj control disable_event
+```
+
+##### 
+
+
 Options:
 -  -A, --app APPLICATION
 -  -b, --broker TEXT
