@@ -129,3 +129,4 @@ Options:
 
 ## Documentation
 - https://docs.celeryproject.org/en/stable/getting-started/next-steps.html#project-layout
+- https://www.impactian.com/python/ray-vs-dask-vs-celery-the-road-to-parallel-computing (*)
