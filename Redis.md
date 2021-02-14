@@ -47,6 +47,11 @@ print(row)
 > redis-cli --bigkeys
 ```
 
+### Connecting to redis in another ip
+```
+> redis-cli -h 192.168.43.103
+```
+
 ## Python
 
 ```python
