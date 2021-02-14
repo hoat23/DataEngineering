@@ -48,8 +48,13 @@ print(row)
 ```
 
 ### Connecting to redis in another ip
-```
+```bash
 > redis-cli -h 192.168.43.103
+```
+Disable protected-mode
+```bash
+C:\Users\Hoat23>redis-cli
+127.0.0.1:6379> CONFIG SET protected-mode no
 ```
 
 ## Python
