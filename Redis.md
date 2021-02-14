@@ -56,7 +56,16 @@ Disable protected-mode
 C:\Users\Hoat23>redis-cli
 127.0.0.1:6379> CONFIG SET protected-mode no
 ```
+### PubSub on Redis
 
+#### Creating a Channel in Redis-CLI
+```
+127.0.0.1:6379> subscribe MyChannel
+```
+#### Publishing message on Channel
+```
+127.0.0.1:6379> PUBLISH MyChannel 'Hola mundo'
+```
 ## Python
 
 ```python
