@@ -16,6 +16,28 @@
 
 - https://riptutorial.com/redis/example/29962/installing-and-running-redis-server-on-windows
 
+## Installation Redis on Ubuntu
+1. Installing redis-server
+```
+sudo apt update
+sudo apt install redis-server
+```
+2. Open with nano ```sudo nano /etc/redis/redis.conf```
+3. Find ```supervised``` and change ```no``` by ```systemd```
+4. Exit and save changes.
+5. Restart redis server ```sudo systemctl restart redis.service```
+6. Check status with ```sudo systemctl status redis```
+
+If want stop service use this command ```sudo systemctl disable redis```
+
+### Check redis network
+```
+sudo netstat -lnp | grep redis
+```
+
+### More Documentation
+- https://www.digitalocean.com/community/tutorials/como-instalar-y-proteger-redis-en-ubuntu-18-04-es
+
 ## Redis CLI Commands
 
 ### Start Redis-Server
