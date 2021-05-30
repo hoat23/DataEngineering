@@ -1,6 +1,6 @@
 # HADOOP COMMANDS
 
-## Remove a broad
+## Remove a all broad in a carpet
 
 ```bash
 hadoop fs -rm -r /path/file
