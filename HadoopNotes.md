@@ -2,7 +2,8 @@
 
 ## Remove a broad
 
-´´´bash
+```bash
 hadoop fs -rm -r /path/file
-´´´
+```
+
 
