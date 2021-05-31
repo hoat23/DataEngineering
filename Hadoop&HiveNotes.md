@@ -22,3 +22,13 @@ INSERT INTO group_database.database_01  PARTITION (fieldpartition = 'yyyy-mm-dd'
 ('col1','col2','col3',...,'coln'),
 ('col1','col2','col3',...,'coln')
 ```
+## WITH AS
+```sql
+WITH name_temp_db
+AS (
+    SELECT * FROM group_database.database_01
+),
+AS (
+   SELECT * FROM group_database.database_01
+);
+```
