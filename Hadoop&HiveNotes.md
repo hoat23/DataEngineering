@@ -16,6 +16,33 @@ hadoop fs -rm -r /path/file
 
 # HIVE COMMANDS
 
+## CONFIG PERFOMANCE
+
+```hql
+-- Configuracion base
+SET hive.exec.compress.output = true;
+SET parquet.compression = snappy;
+SET hive.exec.dynamic.partition = true;
+SET hive.exec.dynamic.partition.mode = nonstrict;
+SET hive.execution.engine = ${hiveconf:PRM_HIVE_ENGINE};
+SET spark.job.queue.name = ${hiveconf:PRM_HIVE_QUEUE};
+
+ 
+
+-- Configuracion Mappers
+SET mapreduce.job.maps = 60;
+SET mapreduce.map.cpu.vcores = 2;
+SET mapreduce.input.fileinputformat.split.maxsize = 100000000000;
+SET mapreduce.input.fileinputformat.split.minsize = 100000000000;
+SET mapreduce.map.memory.mb = 8500;
+
+-- Configuracion Reducers
+SET mapreduce.job.reduces = 60;
+SET mapreduce.reduce.cpu.vcores = 2;
+SET mapreduce.reduce.memory.mb = 10000;
+```
+
+
 ## Insert data
 ```hql
 INSERT INTO group_database.database_01  PARTITION (fieldpartition = 'yyyy-mm-dd')  VALUES
