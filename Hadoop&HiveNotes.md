@@ -27,8 +27,6 @@ SET hive.exec.dynamic.partition.mode = nonstrict;
 SET hive.execution.engine = ${hiveconf:PRM_HIVE_ENGINE};
 SET spark.job.queue.name = ${hiveconf:PRM_HIVE_QUEUE};
 
- 
-
 -- Configuracion Mappers
 SET mapreduce.job.maps = 60;
 SET mapreduce.map.cpu.vcores = 2;
@@ -41,7 +39,6 @@ SET mapreduce.job.reduces = 60;
 SET mapreduce.reduce.cpu.vcores = 2;
 SET mapreduce.reduce.memory.mb = 10000;
 ```
-
 
 ## Insert data
 ```hql
