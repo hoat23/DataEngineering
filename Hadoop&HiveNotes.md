@@ -17,11 +17,12 @@ hadoop fs -rm -r /path/file
 # HIVE COMMANDS
 
 ## Insert data
-```sql
+```hql
 INSERT INTO group_database.database_01  PARTITION (fieldpartition = 'yyyy-mm-dd')  VALUES
 ('col1','col2','col3',...,'coln'),
 ('col1','col2','col3',...,'coln')
 ```
+
 ## WITH AS
 ```hql
 WITH 
