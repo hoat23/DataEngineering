@@ -58,7 +58,7 @@ CREATE EXTERNAL TABLE group_database.database_01
   fieldname_01 STRING,
   fieldname_02 STRING,
   fieldname_03 VARCHAR(30),
-  fieldname_04  TIMESTAMP
+  fieldname_04 TIMESTAMP
 )
 STORED AS PARQUET
 LOCATION '/${hiveconf:PRM_AMBIENTE}/bcp/udv/int/temp/H23_TMP_DIRECTORY'
