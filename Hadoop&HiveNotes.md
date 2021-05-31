@@ -23,7 +23,7 @@ INSERT INTO group_database.database_01  PARTITION (fieldpartition = 'yyyy-mm-dd'
 ('col1','col2','col3',...,'coln')
 ```
 ## WITH AS
-```sql
+```hql
 WITH 
 tmp_db_01 AS (
     SELECT * FROM group_database.database_01
