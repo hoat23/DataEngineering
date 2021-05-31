@@ -26,14 +26,13 @@ INSERT INTO group_database.database_01  PARTITION (fieldpartition = 'yyyy-mm-dd'
 ## WITH AS
 ```hql
 WITH 
-tmp_db_01 AS (
+  tmp_db_01 AS (
     SELECT * FROM group_database.database_01
-),
-tmp_db_02 AS (
+  ),
+  tmp_db_02 AS (
     SELECT * FROM group_database.database_02
-)
-SELECT * FROM tmp_db_02.field01 = tmp_db_02.field_01
-;
+  )
+SELECT * FROM tmp_db_02.field01 = tmp_db_02.field_01;
 ```
 
 
