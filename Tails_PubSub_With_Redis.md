@@ -142,3 +142,4 @@ r.flushdb()
 - https://tech.webinterpret.com/redis-notifications-python/
 - https://itnext.io/event-data-pipelines-with-redis-pub-sub-async-python-and-dash-ab0a7bac63b0
 - https://www.linuxtechi.com/install-redis-server-on-centos-8-rhel-8/
+- https://redis.io/topics/rediscli
