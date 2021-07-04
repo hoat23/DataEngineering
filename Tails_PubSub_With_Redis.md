@@ -55,7 +55,36 @@ sudo netstat -lnp | grep redis
 ```
 > redis-cli --bigkeys
 ```
+### Monitoring redis
+Monitoring de commands
+```bash
+> redis-cli monitor
+```
+results:
+```
+OK
+1460100081.165665 [0 127.0.0.1:51706] "set" "foo" "bar"
+1460100083.053365 [0 127.0.0.1:51707] "get" "foo"
+```
 
+Monitoring latency to responses.
+```bash
+> redis-cli --latency
+```
+results:
+```
+min: 0, max: 1, avg: 0.19 (427 samples)
+```
+
+Monitoring latency in disk
+```bash
+> redis-cli --latency-dist
+``` 
+
+Monitoring latency history
+```bash
+> redis-cli --latency-history
+```
 ### Connecting to redis in another ip
 ```bash
 > redis-cli -h 192.168.43.103
