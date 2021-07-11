@@ -122,6 +122,10 @@ Adding other list of IP
 ```bash
 127.0.0.1:6379>srem yesterday_ip 10.0.0.1
 ```
+### Print keys created
+```bash
+127.0.0.1:6379>keys *
+```
 ## Pub-Sub Pattern on Redis
 ### in CLI
 
