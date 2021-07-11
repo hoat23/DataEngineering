@@ -106,17 +106,21 @@ Adding other list of IP
 127.0.0.1:6379>sadd yesterday_ip 10.0.0.2 10.0.0.6 10.0.0.4 10.0.0.2 10.0.0.3 10.0.0.4
 ```
 ### Showing all registers by key
-```
+```bash
 127.0.0.1:6379>smembers users_ip
 ```
 ### Difference of registers
-```
+```bash
 127.0.0.1:6379>sdiff yesterday_ip users_ip
 ```
 ### Checking if a registers in a key
-```
+```bash
 127.0.0.1:6379>sismember yesterday_ip 10.0.0.2
 (integer) 1
+```
+### Remove a registers
+```bash
+127.0.0.1:6379>srem yesterday_ip 10.0.0.1
 ```
 ## Pub-Sub Pattern on Redis
 ### in CLI
