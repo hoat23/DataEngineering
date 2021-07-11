@@ -94,8 +94,31 @@ Disable protected-mode
 C:\Users\Hoat23>redis-cli
 127.0.0.1:6379> CONFIG SET protected-mode no
 ```
-## Pub-Sub Pattern on Redis
+## S-commands
 
+### Adding registers
+```bash
+127.0.0.1:6379>sadd users_ip 10.0.0.1
+127.0.0.1:6379>sadd users_ip 10.0.0.2 10.0.0.3 10.0.0.4
+```
+Adding other list of IP
+```bash
+127.0.0.1:6379>sadd yesterday_ip 10.0.0.2 10.0.0.6 10.0.0.4 10.0.0.2 10.0.0.3 10.0.0.4
+```
+### Showing all registers by key
+```
+127.0.0.1:6379>smembers users_ip
+```
+### Difference of registers
+```
+127.0.0.1:6379>sdiff yesterday_ip users_ip
+```
+### Checking if a registers in a key
+```
+127.0.0.1:6379>sismember yesterday_ip
+(integer) 0
+```
+## Pub-Sub Pattern on Redis
 ### in CLI
 
 #### Creating a Channel in Redis-CLI
