@@ -115,8 +115,8 @@ Adding other list of IP
 ```
 ### Checking if a registers in a key
 ```
-127.0.0.1:6379>sismember yesterday_ip
-(integer) 0
+127.0.0.1:6379>sismember yesterday_ip 10.0.0.2
+(integer) 1
 ```
 ## Pub-Sub Pattern on Redis
 ### in CLI
