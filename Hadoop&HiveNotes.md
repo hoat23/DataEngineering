@@ -144,3 +144,40 @@ STORED AS PARQUET
 LOCATION '/${hiveconf:PRM_AMBIENTE}/bcp/udv/int/temp/H23_TMP_DIRECTORY'
 TBLPROPERTIES( "parquet.compress"="SNAPPY" );
 ```
+
+## FUNCTIONS
+
+### Convertion functions
+
+#### cast
+```hql
+select cast((t1*1000 +t2.1000) as varchar) from t1.
+```
+#### try_cast
+```hql
+ select try_cast((t1*1000 +t2.1000) as varchar) from t1.
+ ```
+ ### typeof
+ ```hql
+Select typeOf('chanchal') ; 
+>output :-- varchar(8)
+ ```
+## Mathematical functions
+- abs(n): This function returns the absolute value.
+- cbrt(n): This method returns the cube root of a given number.
+- ceiling(n): This function returns n rounded up to the nearest integer.
+- floor(n): This method returns n rounded down to the nearest integer
+- power(x, y): This function returns x raised to the power of y.
+ 
+## String functions
+- concat(string1, ..., stringN): This function is used to concatenate multiple string into a single string: select concat('packt','publication') as concat_value;.
+- length(string): This function returns the length of a string.
+- lower(string): This function converts a string to lowercase, which means that lowercase('CHINA') would return CHINA.
+- ltrim(string): This function removes any leading whitespace from a string.
+- rtrim(string): This function removes trailing whitespace from a string.
+- replace(sourcestring, search): This function removes all instances of a search string from a string.
+- replace(string, searchstring, replace): This function replaces all instances of search strings with replace strings in the original string.
+- reverse(string): This function reverses the string.
+- split(string, delimiter): This split function in Presto is similar to the split function of Java that splits the string based on delimiter and returns the array of string.
+- split(string, delimiter, limit): This is an advanced version of the split function which splits the string on delimiter and returns an array of string with limit specified. The last string index in the array always contains everything left in the string.
+- split_part(string, delimiter, index): This function splits the string on delimiter and returns the string at index. The index starts with 1 and if the index is greater than the number of fields, then null is returned.
