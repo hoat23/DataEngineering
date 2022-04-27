@@ -20,6 +20,14 @@
 
 - https://github.com/MicrosoftArchive/redis/releases
 
+### Restart service or set path.config
+```bash
+redis-cli.exe
+shutdown
+exit
+redis-server.exe pathtoconfig
+```
+
 ## Installation Redis on Ubuntu
 1. Installing redis-server
 ```
