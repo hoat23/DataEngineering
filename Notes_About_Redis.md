@@ -16,6 +16,10 @@
 
 - https://riptutorial.com/redis/example/29962/installing-and-running-redis-server-on-windows
 
+### Download image
+
+- https://github.com/MicrosoftArchive/redis/releases
+
 ## Installation Redis on Ubuntu
 1. Installing redis-server
 ```
