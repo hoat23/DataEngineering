@@ -76,3 +76,6 @@ Docker online: https://labs.play-with-docker.com
 ## Architectures in AWS
 
 - https://d1.awsstatic.com/events/reinvent/2019/Building_on_AWS_The_architecture_of_the_Siemens_MindSphere_platform_MFG202.pdf
+
+## Dataframes with Javascript 
+- https://stackoverflow.com/questions/30610675/python-pandas-equivalent-in-javascript
