@@ -58,6 +58,17 @@ sudo netstat -lnp | grep redis
 > redis-server
 ```
 
+### Connecting a Redis-Server
+#### Localhost
+```
+> redis-cli
+```
+
+#### External host
+```
+> redis-cli -h www.myredishost.com  -p 6379
+```
+
 ### Exploring DB
 ```
 127.0.0.1:6379> dbsize
