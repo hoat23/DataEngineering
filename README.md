@@ -36,6 +36,8 @@ Docker build a image from a files configuration.
 ```
 docker build -t docker-hadoop docker-hadoop
 ```
+If you have problems with connection to internet, add the command: ``` --network=host ```
+
 
 Docker remove all stopped containers, dangling images, and unused network. Use the -f or --force option to bypass the prompt. By default, the command doesn’t remove unused volumes to prevent losing important data. To remove all unused volumes, pass the --volumes option
 
