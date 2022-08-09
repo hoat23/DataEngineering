@@ -86,3 +86,6 @@ Docker online: https://labs.play-with-docker.com
 ## MongoDB 
 - https://riptutorial.com/Download/mongodb-es.pdf
 - https://riptutorial.com/mongodb/example/23688/sharding-environment-setup
+
+## Scala 
+- https://www.scala-sbt.org/1.x/docs/es/sbt-by-example.html
