@@ -136,6 +136,27 @@ print("-------------------------------------------------------------------------
 
 ```
 
+# STUNNEL
+
+Stunnel is a proxy designed to add TLS encryption functionality to existing clients and servers without any changes in the programs' code. Its architecture is optimized for security, portability, and scalability (including load-balancing), making it suitable for large deployments.
+
+Stunnel uses the OpenSSL library for cryptography, so it supports whatever cryptographic algorithms are compiled into the library. It can benefit from the FIPS 140-2 validation of the OpenSSL FIPS Object Module, as long as the building process meets its Security Policy. A scanned FIPS 140-2 Validation Certificate document is available for download on the NIST web page. The OpenSSL FIPS 140-2 module is currently only available for OpenSSL 1.0.2. FIPS-enabled Windows installers of stunnel are available on request with our customer support plans.
+
+Stunnel is a free software authored by Michał Trojnara. Although distributed under GNU GPL version 2 or later with OpenSSL exception, stunnel is not a community project. We retain the copyright of the source code. Please contact us for commercial support or non-GPL licenses. Free, community-based support is also available via stunnel-users mailing list.
+
+* Download: https://www.stunnel.org/downloads.html 
+
+### Configuration
+
+
+- ``` touch /etc/stunnel/stunnel.conf``` 
+- ``` chmod 775 /etc/stunnel/stunnel.conf``` 
+- ``` nano /etc/stunnel/stunnel.conf``` 
+- ``` systemctl restart stunnel4``` 
+- ``` systemctl status stunnel4``` 
+
+
 ### Documentation about Fernet
 - https://github.com/fernet/spec/blob/master/Spec.md#token-format
+- 
 
