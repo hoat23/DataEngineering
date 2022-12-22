@@ -117,6 +117,24 @@ Disable protected-mode
 C:\Users\Hoat23>redis-cli
 127.0.0.1:6379> CONFIG SET protected-mode no
 ```
+
+## Installing modules 
+
+### RedisJSON
+
+Download binary module from https://redis.com/redis-enterprise-software/download-center/software/
+
+#### Execute inline
+```bash
+redis-server --loadmodule /etc/redismodule/rejson2.2.0/rejson.so
+```
+
+#### Execute at start
+nano /etc/redis/redis.conf
+Add:
+```
+loadmodule /etc/redismodule/rejson2.2.0/rejson.so
+```
 ## S-commands
 
 ### Adding registers
