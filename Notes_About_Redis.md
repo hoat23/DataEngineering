@@ -128,12 +128,21 @@ Download binary module from https://redis.com/redis-enterprise-software/download
 ```bash
 redis-server --loadmodule /etc/redismodule/rejson2.2.0/rejson.so
 ```
-
 #### Execute at start
+```
 nano /etc/redis/redis.conf
+```
 Add:
 ```
 loadmodule /etc/redismodule/rejson2.2.0/rejson.so
+```
+Run using file configuration
+```
+redis-server /etc/redis/redis.conf
+```
+Print log:
+```
+tail -f /var/log/redis/redis-server.log
 ```
 ## S-commands
 
