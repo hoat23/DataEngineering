@@ -144,6 +144,22 @@ Print log:
 ```
 tail -f /var/log/redis/redis-server.log
 ```
+### RediSearch on Ubuntu
+
+Update the package index:
+
+```bash
+sudo apt-get update
+```
+Install redis-redisearch deb package:
+
+```bash
+sudo apt-get install redis-redisearch
+```
+
+More documentation
+- https://ubuntu.pkgs.org/20.04/ubuntu-universe-arm64/redis-redisearch_1.2.1-4_arm64.deb.html
+
 ## S-commands
 
 ### Adding registers
