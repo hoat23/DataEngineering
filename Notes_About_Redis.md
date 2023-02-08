@@ -157,6 +157,10 @@ Install redis-redisearch deb package:
 sudo apt-get install redis-redisearch
 ```
 
+Start RediSearch
+```
+redis-server --loadmodule /etc/redismodule/rejson2.2.0/rejson.so --loadmodule /usr/lib/redis/modules/redisearch.so
+```
 More documentation
 - https://ubuntu.pkgs.org/20.04/ubuntu-universe-arm64/redis-redisearch_1.2.1-4_arm64.deb.html
 
