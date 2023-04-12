@@ -45,10 +45,10 @@ Docker remove all stopped containers, dangling images, and unused network. Use t
 docker system prune
 ```
 
-Docker remove image (f:force)
+Docker remove image (f:force), especify using repository:tag or image_id
 
 ```
-docker image rmi -f hadoop-docker
+docker image rmi -f hadoop-docker:1.0
 ```
 
 Starting a "centos" container.
